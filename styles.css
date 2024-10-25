@@ -1,29 +1,24 @@
 /*  your css code here. If applicable */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 #container {
     margin: 20px;
-    position: relative; /* This ensures pseudo-elements are positioned relative to this container */
-    padding: 10px; /* Optional padding for better appearance */
-    border: 1px solid #ccc; /* Optional border for visibility */
+    position: relative; /* Required for pseudo-elements positioning */
+    padding: 20px; /* Optional: adds space around main content */
+    border: 1px solid #000; /* Optional: for better visibility of the container */
 }
 
 #container::before {
-    content: "Before Content";
-    color: #f00; /* Red color */
+    content: 'Before Content';
+    color: #f00;
     font-size: 20px;
-    display: block; /* Makes the pseudo-element take full width */
-    margin-bottom: 10px; /* Space between before content and container */
+    display: block; /* Ensures it appears on a new line */
+    margin-bottom: 10px; /* Adds space between the before content and the container */
 }
 
 #container::after {
-    content: "After Content";
-    color: #f00; /* Red color */
+    content: 'After Content';
+    color: #f00;
     font-size: 20px;
-    display: block; /* Makes the pseudo-element take full width */
-    margin-top: 10px; /* Space between container and after content */
+    display: block; /* Ensures it appears on a new line */
+    margin-top: 10px; /* Adds space between the container and the after content */
 }
+
